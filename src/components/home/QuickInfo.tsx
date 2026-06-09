@@ -23,7 +23,7 @@ export const QuickInfo = () => {
   return (
     <section
       id="science-background"
-      className="border-t border-zinc-200 bg-white py-16 px-6 md:py-20"
+      className="border-t border-zinc-200 bg-white py-14 px-6 md:py-16"
     >
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">

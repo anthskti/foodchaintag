@@ -19,18 +19,22 @@ export const HeroSection = () => {
       </div>
 
       <div className="relative z-10 mx-auto max-w-3xl px-6 py-14 text-center md:py-16">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-amber-200 drop-shadow-md">
           Outdoor Learning Game
         </p>
 
         <h1 className="text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl md:text-6xl">
           FOOD CHAIN TAG
         </h1>
-
-        <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white md:text-xl">
+        <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white font-semibold md:text-xl drop-shadow-md">
+          MOVE OR HIDE TO STAY ALIVE! <br />
+          EAT OR BE EATEN <br />
+          SURVIVE IN THE ECOSYSTEM!
+        </p>
+        {/* <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white md:text-xl">
           A card-driven tag game that teaches food chains and food webs through
           movement, strategy, and play.
-        </p>
+        </p> */}
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <Button
@@ -40,7 +44,7 @@ export const HeroSection = () => {
             className="min-w-[200px] border-white/70 bg-white/10 text-white hover:bg-white/20 hover:text-white duration-200"
           >
             <Link href="#deck">
-              See how it works
+              See how to play!
               <ChevronDown className="size-4" aria-hidden />
             </Link>
           </Button>

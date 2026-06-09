@@ -30,7 +30,7 @@ export default function AboutGame() {
   return (
     <section
       id="about"
-      className="scroll-mt-4 border-t border-zinc-200 bg-white py-16 px-6 md:py-20"
+      className="scroll-mt-4 border-t border-zinc-200 bg-white py-14 px-6 md:py-16"
     >
       <div className="mx-auto grid max-w-6xl items-start gap-10 md:grid-cols-2 md:gap-16">
         <div>
@@ -40,7 +40,7 @@ export default function AboutGame() {
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
             What is Food Chain Tag?
           </h2>
-          <p className="mt-4 max-w-prose text-lg text-zinc-600">
+          <p className="mt-4 max-w-prose text-lg text-zinc-800">
           Food Chain Tag is a comprehensive game that gets the participants
           active and outdoors in a fun competitive manner. Apply your science
           knowledge of food webs, food chains and ecosystem outdoors, in a gym

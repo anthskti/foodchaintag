@@ -4,17 +4,17 @@ import { Eye, Shield, Utensils } from "lucide-react";
 const winConditions = [
   {
     title: "Stay Alive",
-    description: "Avoid being tagged and eaten by predators.",
+    description: "Avoid being tagged and eaten.",
     icon: Shield,
   },
   {
     title: "Hide & Escape",
-    description: "Use space and strategy to slip away and thrive.",
+    description: "Use space and strategy to be successful and thrive.",
     icon: Eye,
   },
   {
     title: "Eat to Survive",
-    description: "Tag prey lower than you to gain energy.",
+    description: "Eat prey lower than yourself to gain energy needed to SURVIVE!",
     icon: Utensils,
   },
 ] as const;
@@ -56,7 +56,7 @@ export const Details = () => {
   return (
     <section
       id="deck"
-      className="scroll-mt-4 border-y border-zinc-200 bg-zinc-50 py-16 px-6 md:py-20"
+      className="scroll-mt-4 border-y border-zinc-200 bg-zinc-50 py-14 px-6 md:py-16"
     >
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
@@ -74,11 +74,11 @@ export const Details = () => {
               key={title}
               className="rounded-xl border border-zinc-200 bg-white p-5 ring-1 ring-zinc-200/60"
             >
-              <div className="flex size-9 items-center justify-center rounded-lg bg-emerald-50">
-                <Icon className="size-5 text-emerald-700" aria-hidden />
+              <div className="inline-flex items-center gap-2 rounded-2xl bg-emerald-50 px-2.5 py-1">
+                <Icon className="size-5 text-emerald-700" />
+                <div className="text-sm font-bold text-emerald-700">{title}</div>
               </div>
-              <h3 className="mt-3 font-bold text-zinc-900">{title}</h3>
-              <p className="mt-1 text-sm leading-relaxed text-zinc-600">
+              <p className="mt-1 text-xl font-bold leading-relaxed text-zinc-800 italic">
                 {description}
               </p>
             </li>
@@ -121,7 +121,7 @@ export const Details = () => {
             <div className="flex flex-col overflow-hidden rounded-xl bg-white shadow-md ring-1 ring-zinc-200">
               <div className="border-b border-zinc-100 bg-zinc-50 px-3 py-2">
                 <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-900">
-                  Deck
+                  Deck Cards
                 </h3>
               </div>
               <table className="w-full text-left text-xs">

@@ -7,7 +7,7 @@ export default function CTA() {
   return (
     <section
       id="order"
-      className="scroll-mt-4 bg-linear-to-br from-[#f0c234] via-[#f5d060] to-[#f7d97e] px-6 py-16 md:py-20"
+      className="scroll-mt-4 bg-linear-to-br from-[#f0c234] via-[#f5d060] to-[#f7d97e] px-6 py-14 md:py-16"
     >
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-800/70">
