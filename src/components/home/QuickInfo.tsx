@@ -31,7 +31,7 @@ export const QuickInfo = () => {
             Science Background
           </p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 md:text-4xl">
-            Ecosystem Essentials
+            Ecosystem Information
           </h2>
           <p className="mt-3 text-lg leading-relaxed text-zinc-600">
             Quick definitions to support classroom discussion before, during, or
@@ -44,7 +44,7 @@ export const QuickInfo = () => {
             <article
               key={term}
               className={cn(
-                "rounded-xl border border-zinc-200 bg-zinc-50 p-6 border-l-4",
+                "rounded-xl border border-zinc-200 bg-zinc-50 p-6 border-l-4 shadow-md",
                 accent,
               )}
             >
@@ -63,7 +63,7 @@ export const QuickInfo = () => {
           ))}
         </div>
 
-        <article className="mt-6 rounded-xl border border-zinc-200 bg-zinc-50 p-6 md:p-8">
+        <article className="mt-6 rounded-xl border border-zinc-200 bg-zinc-50 p-6 md:p-8 shadow-md">
           <div className="flex items-start gap-4">
             <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-emerald-600 shadow-sm">
               <GitBranch className="size-5 text-white" aria-hidden />
@@ -89,7 +89,7 @@ export const QuickInfo = () => {
             href="/education"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-700 transition-colors hover:text-emerald-900"
           >
-            Explore lesson ideas
+            Explore on our Education Page
             <ArrowRight className="size-4" aria-hidden />
           </Link>
         </div>

@@ -1,5 +1,11 @@
+import { Connections } from "@/components/education/Connections";
+import { Discussion } from "@/components/education/Discussion";
+
 export default function Education() {
   return (
-    <div className="flex justify-center items-center min-h-screen">hi</div>
+    <main className="bg-white min-h-screen">
+      <Connections />
+      <Discussion />
+    </main>
   );
 }
