@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Eye, Shield, Utensils } from "lucide-react";
+import { direwolf } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 const winConditions = [
   {
@@ -78,7 +80,7 @@ export const Details = () => {
                 <Icon className="size-5 text-emerald-700" />
                 <div className="text-sm font-bold text-emerald-700">{title}</div>
               </div>
-              <p className="mt-1 text-xl font-bold leading-relaxed text-zinc-800 italic">
+              <p className={cn(direwolf.className, "mt-1 text-2xl leading-relaxed text-zinc-800 italic")}>
                 {description}
               </p>
             </li>
