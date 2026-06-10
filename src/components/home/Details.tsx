@@ -100,7 +100,7 @@ export const Details = () => {
             </p>
           </div>
 
-          <div className="mt-6 grid grid-cols-2 items-stretch gap-4 md:grid-cols-4 md:gap-5">
+          <div className="mt-6 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 md:grid-cols-4 md:gap-5">
             {featuredCards.map(({ name, image, width, height }) => (
               <div
                 key={name}

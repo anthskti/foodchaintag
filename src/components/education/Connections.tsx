@@ -1,19 +1,25 @@
+import { cn } from "@/lib/utils";
+
 const subjects = [
   {
     label: "Science",
+    className: "bg-red-50 border-l-4 border-l-red-500",
     value:
       "Examining the food chain, food webs, habitats and predator/prey relationships.",
   },
   {
     label: "Math",
+    className: "bg-blue-50 border-l-4 border-l-blue-500",
     value: "Pyramid of numbers and balanced ecosystems.",
   },
   {
     label: "Social Studies",
+    className: "bg-emerald-50 border-l-4 border-l-emerald-500",
     value: "Resource management, ecosystems and orienteering.",
   },
   {
     label: "Health & Physical",
+    className: "bg-yellow-50 border-l-4 border-l-yellow-500",
     value: "Interactive and active play.",
   },
 ] as const;
@@ -36,14 +42,17 @@ export const Connections = () => {
         </div>
 
         <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-          {subjects.map(({ label, value }) => (
+          {subjects.map(({ label, value, className }) => (
             <li
               key={label}
-              className="rounded-xl border border-zinc-200 bg-white p-5 ring-1 ring-zinc-200/60 shadow-md"
+              className={cn(
+                "rounded-xl border border-zinc-200 bg-white p-5 ring-1 ring-zinc-200/60 shadow-md",
+                className,
+              )}
             >
               <div className="flex items-start gap-4">
                 <div>
-                  <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-emerald-800 ring-1 ring-emerald-200/80">
+                  <span className="inline-flex rounded-full bg-white/80 px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider text-zinc-800 ring-1 ring-zinc-200">
                     {label}
                   </span>
                   <p className="mt-2 text-md leading-relaxed text-zinc-800">

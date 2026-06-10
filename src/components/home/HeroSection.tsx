@@ -2,7 +2,9 @@ import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { direwolf } from "@/lib/fonts";
 import { AMAZON_ORDER_URL } from "@/lib/site-links";
+import { cn } from "@/lib/utils";
 
 export const HeroSection = () => {
   return (
@@ -13,7 +15,7 @@ export const HeroSection = () => {
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black/50"
+          className="absolute inset-0 bg-linear-to-b from-black/40 via-black/20 to-black/60"
           aria-hidden
         />
       </div>
@@ -26,9 +28,16 @@ export const HeroSection = () => {
         <h1 className="text-4xl font-extrabold tracking-tight text-white drop-shadow-sm sm:text-5xl md:text-6xl">
           FOOD CHAIN TAG
         </h1>
-        <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white font-semibold md:text-xl drop-shadow-md">
-          MOVE OR HIDE TO STAY ALIVE! <br />
-          EAT OR BE EATEN <br />
+        <p
+          className={cn(
+            direwolf.className,
+            "mx-auto mt-4 max-w-xl text-xl leading-relaxed text-white md:text-3xl drop-shadow-2xl",
+          )}
+        >
+          MOVE OR HIDE TO STAY ALIVE!
+          <br />
+          EAT OR BE EATEN
+          <br />
           SURVIVE IN THE ECOSYSTEM!
         </p>
         {/* <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white md:text-xl">
